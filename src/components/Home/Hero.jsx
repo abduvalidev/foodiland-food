@@ -20,6 +20,21 @@ export default function Hero() {
       bg: Heroimage,
       title: "Spicy delicious chicken wings",
       description:
+        "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim ",
+      user: {
+        name: "Abduvali Kozimov",
+        img: Abduvali,
+        date: {
+          day: "30",
+          month: "January",
+          year: "2024",
+        },
+      },
+    },
+    {
+      bg: Heroimage,
+      title: "Spicy delicious chicken wings",
+      description:
         "Lorem ipsum  sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim ",
       user: {
         name: "John Smith",
