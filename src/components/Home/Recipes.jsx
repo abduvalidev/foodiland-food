@@ -52,7 +52,7 @@ export default function Recipes() {
             tempor incididunt ut labore et dolore magna aliqut enim ad minim{" "}
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-5 md:gap-8 lg:gap-10 mt-8 md:mt-16 lg:mt-24">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8 lg:gap-10 mt-8 md:mt-16 lg:mt-24">
           {cards.map((card, index) => (
             <div className="bg-gradient-to-b from-brand-gray-200/0 to-brand-gray-200/100 rounded-[30px] p-4 space-y-4 md:space-y-6">
               <div className="aspect-video md:aspect-[368/250] overflow-hidden rounded-2xl">
