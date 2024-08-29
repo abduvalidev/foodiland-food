@@ -65,7 +65,7 @@ export default function Recipes() {
               <h4 className="font-semibold text-lg md:text-2xl">
                 {card.title}
               </h4>
-              <div>
+              <div className="pb-4">
                 <div className="flex items-center gap-x-2.5">
                   <img src={TimerSvg} alt="time" />
                   <span className="font-medium text-black/60 text-sm">
