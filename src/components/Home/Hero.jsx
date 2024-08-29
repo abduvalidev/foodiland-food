@@ -106,7 +106,7 @@ export default function Hero() {
             slidesPerView: 1.2,
           },
           1920: {
-            slidesPerView: 1.6,
+            slidesPerView: 1.3,
           },
         }}
         onSlideChange={(swiper) => {
