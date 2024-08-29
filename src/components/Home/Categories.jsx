@@ -46,8 +46,8 @@ export default function Categories() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 items-center gap-5 gap-y-7 md:gap-10 mt-8 md:mt-16 lg:mt-20">
             {cards.map((card, index) => (
-              <div key={index} className="relative h-40 md:h-52 flex items-end">
-                <img className="w-16 md:w-20 lg:w-24 h-16 md:h-20 lg:h-24 absolute top-0 left-1/2 -translate-x-1/2 drop-shadow-right" src={card.icon} alt="icon" />
+              <div key={index} className="relative group h-40 md:h-52 flex items-end cursor-pointer transition duration-300 hover:shadow-lg rounded-[30px]">
+                <img className="w-16 md:w-20 lg:w-24 h-16 md:h-20 lg:h-24 absolute top-0 left-1/2 -translate-x-1/2 drop-shadow-right transition duration-300 group-hover:scale-110" src={card.icon} alt="icon" />
                 <div className="w-full h-36 bg-gradient-to-b from-[#708246]/0 to-[#708246]/10 rounded-[30px] flex items-end py-5 md:py-8">
                   <h5 className="w-full font-semibold text-center md:text-lg line-clamp-1">{card.title}</h5>
                 </div>
