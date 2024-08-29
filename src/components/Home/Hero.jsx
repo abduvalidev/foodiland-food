@@ -87,7 +87,7 @@ export default function Hero() {
         spaceBetween={0}
         loop={true}
         autoplay={{
-          delay: 30000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         breakpoints={{
