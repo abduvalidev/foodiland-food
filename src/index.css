@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  html {
+    @apply scroll-smooth
+  }
+
+  body {
+    @apply font-inter overflow-x-hidden
+  }
+}
+
+.w-container {
+  @apply max-w-base mx-auto px-5 md:px-7 xl:px-10
+}
+
+h1 {
+  @apply font-bold text-black text-3xl md:text-5xl xl:text-[4rem] xl:leading-[76px]
+}
+
+h2 {
+  @apply font-semibold text-black text-2xl md:text-4xl lg:text-5xl
+}
+
+.drob-shadow {
+  box-shadow: 10px 20px 40px 0 rgba(41, 64, 70, 0.1);
+}
