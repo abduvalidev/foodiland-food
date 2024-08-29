@@ -100,10 +100,10 @@ export default function Hero() {
             // spaceBetween: 20,
           },
           1536: {
-            slidesPerView: 1.15,
+            slidesPerView: 1.13,
           },
           1670: {
-            slidesPerView: 1.3,
+            slidesPerView: 1.2,
           },
           1920: {
             slidesPerView: 1.6,
