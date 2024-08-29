@@ -39,11 +39,10 @@ export default function Categories() {
         <div className="max-w-base mx-auto px-5 md:px-7 xl:px-10">
           <div className="flex flex-wrap items-center justify-between gap-4 text-center xs:text-left">
             <h2 className="w-full xs:w-auto heading-2">Categories</h2>
-            <button className="w-full xs:w-auto bg-brand-gray-200 rounded-2xl px-5 md:px-7 py-3 md:py-5">
+            <button className="w-full xs:w-auto bg-brand-gray-200 rounded-2xl transition duration-300 hover:bg-gray-100 hover:shadow-lg px-5 md:px-7 py-3 md:py-5">
               <span className="font-semibold">View All Categories</span>
             </button>
           </div>
-
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 items-center gap-5 gap-y-7 md:gap-10 mt-8 md:mt-16 lg:mt-20">
             {cards.map((card, index) => (
               <div key={index} className="relative group h-40 md:h-52 flex items-end cursor-pointer transition duration-300 hover:shadow-lg rounded-[30px]">
