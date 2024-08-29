@@ -62,10 +62,10 @@ export default function Recipes() {
                   alt="img"
                 />
               </div>
-              <h4 className="font-semibold text-lg md:text-2xl">
+              <h4 className="font-semibold text-lg md:text-2xl px-2">
                 {card.title}
               </h4>
-              <div className="pb-4">
+              <div className="pb-4 px-2">
                 <div className="flex items-center gap-x-2.5">
                   <img src={TimerSvg} alt="time" />
                   <span className="font-medium text-black/60 text-sm">
