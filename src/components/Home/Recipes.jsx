@@ -43,7 +43,7 @@ export default function Recipes() {
     },
   ];
   return (
-    <section className="mt-8 md:mt-16 lg:mt-32 xl:mt-44 pb-10">
+    <section id="recipe" className="mt-8 md:mt-16 lg:mt-32 xl:mt-44 pb-10">
       <div className="w-container">
         <div className="text-center">
           <h2>Simple and tasty recipes</h2>
@@ -54,10 +54,10 @@ export default function Recipes() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8 lg:gap-10 mt-8 md:mt-16 lg:mt-24">
           {cards.map((card, index) => (
-            <div className="bg-gradient-to-b from-brand-gray-200/0 to-brand-gray-200/100 rounded-[30px] p-4 space-y-4 md:space-y-6">
+            <div key={index} className="bg-gradient-to-b from-brand-gray-200/0 to-brand-gray-200/100 rounded-[30px] p-4 space-y-4 md:space-y-6 group cursor-pointer transition duration-300 hover:shadow-lg">
               <div className="aspect-video md:aspect-[368/250] overflow-hidden rounded-2xl">
                 <img
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition duration-300 group-hover:scale-110"
                   src={card.img}
                   alt="img"
                 />

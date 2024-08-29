@@ -22,12 +22,12 @@ export default function Navbar() {
           >
             Home
           </Link>
-          <Link
+          <a
             className="text-black transition duration-300 hover:text-primary/75"
-            to="/recipes"
+            href="#recipe"
           >
             Recipes
-          </Link>
+          </a>
           <Link
             className="text-black transition duration-300 hover:text-primary/75"
             to="/blog"
