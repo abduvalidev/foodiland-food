@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -11,10 +11,15 @@ import TimerSvg from "../../assets/timer.svg";
 import ForkKnife from "../../assets/forkKnife.svg";
 import JohnSmith from "../../assets/johnSmith.jpg";
 import Abduvali from "../../assets/abduvali.jpg";
-import PlayCircle from "../../assets/playCircle.svg";
 import Badge from "../../assets/badge.svg";
+import CustomModal from './CustomModal';
 
 export default function Hero() {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   const cardsHero = [
     {
       bg: Heroimage,
@@ -192,12 +197,11 @@ export default function Hero() {
                         </div>
                       </div>
                     </div>
-                    <button className="w-full xs:w-max bg-black rounded-2xl flex items-center justify-center gap-x-4 transition duration-300 hover:bg-black/80 hover:shadow-md py-3 md:py-5 px-5 md:px-10">
-                      <span className="font-semibold text-white text-sm tracking-[-2%]">
-                        View Recipes
-                      </span>
-                      <img src={PlayCircle} alt="play" />
-                    </button>
+                    <CustomModal
+                      open={open}
+                      handleOpen={handleOpen}
+                      handleClose={handleClose}
+                    />
                   </div>
                 </div>
                 <div className="aspect-video sm:aspect-[16/6] lg:aspect-[660/640] overflow-hidden">
