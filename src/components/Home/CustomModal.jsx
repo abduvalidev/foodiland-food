@@ -15,20 +15,33 @@ export default function CustomModal({ open, handleOpen, handleClose }) {
         </span>
         <img src={PlayCircle} alt="play" />
       </button>
-      <Modal 
-      className="p-5"
-        open={open}
-        onClose={handleClose}
-      >
-        <Box className="bg-black rounded-3xl aspect-[768/500] max-w-3xl mx-auto mt-10 md:mt-16 xl:mt-20 p-5">
-            <iframe
-              className="w-full h-full object-cover rounded-2xl"
-              src="https://www.youtube.com/embed/1gWivt5tNdA?si=6Hb-hyv702Pqg3Ix"
-              title="YouTube video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+      <Modal className="p-5" open={open} onClose={handleClose}>
+        <Box className="bg-white relative rounded-3xl aspect-[768/500] max-w-3xl mx-auto mt-10 md:mt-16 xl:mt-20 p-5">
+          <button onClick={handleClose} className="absolute top-5 right-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={1.5}
+              className="size-6"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <iframe
+            className="mt-8 w-full h-full object-cover rounded-2xl"
+            src="https://www.youtube.com/embed/YBQMdegMDR0?si=47VwsoWEEW-psCZu"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </Box>
       </Modal>
     </div>
