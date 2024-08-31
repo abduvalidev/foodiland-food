@@ -2,7 +2,6 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import PlayCircle from "../../assets/playCircle.svg";
-
 export default function CustomModal({ open, handleOpen, handleClose }) {
   return (
     <div>
@@ -15,7 +14,7 @@ export default function CustomModal({ open, handleOpen, handleClose }) {
         </span>
         <img src={PlayCircle} alt="play" />
       </button>
-      <Modal className="p-5" open={open} onClose={handleClose}>
+      <Modal sx={{'&.MuiModal-root': {background: 'rgba(0, 0, 0, 0.01)'}}} className="p-5" open={open} onClose={handleClose}>
         <Box className="bg-white relative rounded-3xl aspect-[768/500] max-w-3xl mx-auto mt-10 md:mt-16 xl:mt-20 p-5">
           <button onClick={handleClose} className="absolute top-5 right-5">
             <svg
@@ -34,7 +33,7 @@ export default function CustomModal({ open, handleOpen, handleClose }) {
             </svg>
           </button>
           <iframe
-            className="mt-8 w-full h-full object-cover rounded-2xl"
+            className="mt-8 bg-gray-100 w-full h-full object-cover rounded-2xl"
             src="https://www.youtube.com/embed/YBQMdegMDR0?si=47VwsoWEEW-psCZu"
             title="YouTube video player"
             frameborder="0"

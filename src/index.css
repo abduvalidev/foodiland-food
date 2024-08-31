@@ -13,6 +13,7 @@
   }
 }
 
+
 .w-container {
   @apply max-w-base mx-auto px-5 md:px-7 xl:px-10
 }
