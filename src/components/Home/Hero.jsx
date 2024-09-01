@@ -204,7 +204,7 @@ export default function Hero() {
                     />
                   </div>
                 </div>
-                <div className="aspect-video sm:aspect-[16/6] lg:aspect-[660/640] overflow-hidden">
+                <div className="aspect-[16/6] lg:aspect-[660/640] overflow-hidden">
                   <img
                     className="w-full h-full object-cover"
                     src={card.bg}

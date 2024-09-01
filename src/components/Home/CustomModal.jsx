@@ -14,7 +14,7 @@ export default function CustomModal({ open, handleOpen, handleClose }) {
         </span>
         <img src={PlayCircle} alt="play" />
       </button>
-      <Modal sx={{'&.MuiModal-root': {background: 'rgba(0, 0, 0, 0.01)'}}} className="p-5" open={open} onClose={handleClose}>
+      <Modal className="p-5" open={open} onClose={handleClose}>
         <Box className="bg-white relative rounded-3xl aspect-[768/500] max-w-3xl mx-auto mt-10 md:mt-16 xl:mt-20 p-5">
           <button onClick={handleClose} className="absolute top-5 right-5">
             <svg
