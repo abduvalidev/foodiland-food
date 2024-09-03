@@ -29,3 +29,7 @@ h2 {
 .drob-shadow {
   box-shadow: 10px 20px 40px 0 rgba(41, 64, 70, 0.1);
 }
+
+.swiper-pagination {
+  @apply w-7 h-5 !top-3 !right-3 !left-auto text-[10px] text-white bg-black/40 rounded-full flex items-center justify-center
+}

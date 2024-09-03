@@ -98,21 +98,21 @@ export default function Recipes() {
           tempor incididunt ut labore et dolore magna aliqut enim ad minim{" "}
         </p>
       </div>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8 lg:gap-10 mt-8 md:mt-16 lg:mt-24">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 mt-8 md:mt-16 lg:mt-24">
         {cards.map((card, index) => (
           <div
             key={index}
             className="bg-gradient-to-b from-brand-gray-200/0 to-brand-gray-200/100 relative rounded-[30px] p-4 space-y-4 md:space-y-6 group transition duration-300 hover:shadow-lg"
           >
             <LikeButton />
-            <div className="aspect-[16/7] md:aspect-[368/250] overflow-hidden rounded-2xl">
+            <div className="aspect-[16/7] lg:aspect-[368/250] overflow-hidden rounded-2xl">
               <img
                 className="w-full h-full object-cover transition duration-300 group-hover:scale-110 select-none"
                 src={card.img}
                 alt="img"
               />
             </div>
-            <h4 className="font-semibold sm:text-lg lg:text-2xl px-2">
+            <h4 className="font-semibold sm:text-lg lg:text-2xl line-clamp-2 px-2">
               {card.title}
             </h4>
             <div className="flex items-center gap-x-4 lg:gap-x-6 md:pb-4 px-2">

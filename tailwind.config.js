@@ -22,6 +22,7 @@ export default {
         brand: {
           gray: {
             200: '#E7FAFE',
+            800: '#262626'
           }
         }
       },
@@ -29,7 +30,7 @@ export default {
         'base': '84rem'
       },
       dropShadow: {
-        'right': '20px 20px 10px rgba(0, 0, 0, 0.25)', // customize the values
+        'right': '20px 20px 10px rgba(0, 0, 0, 0.25)',
       },
     },
   },

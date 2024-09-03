@@ -5,6 +5,7 @@ import Meat from "../../assets/meat.svg";
 import Dessert from "../../assets/dessert.svg";
 import Lunch from "../../assets/lunch.svg";
 import Chocolate from "../../assets/chocolate.svg";
+import { Button } from "@mui/material";
 
 export default function Categories() {
   const cards = [
@@ -38,9 +39,9 @@ export default function Categories() {
       <section className="mt-8 md:mt-16 lg:mt-32 xl:mt-40">
         <div className="flex flex-wrap items-center justify-between gap-4 text-center xs:text-left">
           <h2 className="w-full xs:w-auto heading-2">Categories</h2>
-          <button className="w-full xs:w-auto bg-brand-gray-200 rounded-2xl transition duration-300 hover:bg-gray-100 hover:shadow-lg px-5 md:px-7 py-3 md:py-5">
+          <Button className="!w-full xs:!w-auto !bg-brand-gray-200 !text-black !font-inter !font-semibold !rounded-2xl !transition !duration-300 hover:!bg-gray-100 hover:!shadow-lg !px-5 md:!px-7 !py-3 md:!py-5">
             <span className="font-semibold">View All Categories</span>
-          </button>
+          </Button>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 items-center gap-5 gap-y-7 md:gap-10 mt-8 md:mt-16 lg:mt-20">
           {cards.map((card, index) => (

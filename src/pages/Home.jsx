@@ -10,11 +10,11 @@ export default function Home() {
     <div>
       <Hero />
       <div className="w-container">
-      <Categories />
-      <Recipes />
-      <Cooker />
-      <CheckOut />
+        <Categories />
+        <Recipes />
+        <Cooker />
       </div>
+      <CheckOut />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import PlayCircle from "../../assets/playCircle.svg";
+import { Button } from "@mui/material";
 export default function CustomModal({ open, handleOpen, handleClose }) {
   return (
     <div>
@@ -15,7 +16,7 @@ export default function CustomModal({ open, handleOpen, handleClose }) {
         <img src={PlayCircle} alt="play" />
       </button>
       <Modal className="p-5" open={open} onClose={handleClose}>
-        <Box className="bg-white relative rounded-3xl aspect-[768/500] max-w-3xl mx-auto mt-10 md:mt-16 xl:mt-20 p-5">
+        <Box className="bg-white relative rounded-3xl aspect-[768/500] max-w-4xl mx-auto mt-10 md:mt-16 xl:mt-20 p-5">
           <button onClick={handleClose} className="absolute top-5 right-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
